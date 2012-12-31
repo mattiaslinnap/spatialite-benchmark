@@ -3,11 +3,56 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-        >
-    <TextView
-            android:layout_width="fill_parent"
+              android:id="@+id/mean">
+
+    <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
-            />
+            android:text="Truncate table"
+            android:id="@+id/reset"
+            android:layout_gravity="left|center_vertical"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert row"
+            android:id="@+id/addrow"
+            android:layout_gravity="left|center_vertical"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Row count: null"
+            android:id="@+id/rowcount"
+            android:layout_gravity="left|center_vertical"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="File size: null"
+            android:id="@+id/filesize"
+            android:layout_gravity="left|center_vertical"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start test"
+            android:id="@+id/start"
+            android:layout_gravity="left|center_vertical"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mean insert/sec: null"
+            android:id="@+id/mean"
+            android:layout_gravity="left|center_vertical"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stddev insert/sec: null"
+            android:id="@+id/stddev"
+            android:layout_gravity="left|center_vertical"/>
+
 </LinearLayout>
 
